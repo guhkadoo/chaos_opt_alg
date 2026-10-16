@@ -1,0 +1,22 @@
+====================================================================
+ RPD — 3 barras | COA (mapa logístico) + pandapower
+====================================================================
+ Controles       : 4 (2 tensões, 1 tap, 1 shunt)
+ Primeira onda   : S1 = 2000
+ Segunda onda    : S2 = 150 por amplitude
+--------------------------------------------------------------------
+Caso base -> perdas = 0.723597 MW | objetivo = 0.723597
+
+Configuração ótima:
+  slack vm_pu = 1.063331
+  gen   vm_pu = 1.069324
+  tap_pos     = -1
+  shunt step  = 1
+
+Resultados:
+  Perdas ativas mínimas : 0.631806 MW
+  Redução               : +0.091791 MW (+12.69 %)
+  Violações             : 0
+  Avaliações            : 3205
+  CSV                   : /home/yoshio/chaos_opt_alg/convergencia_case3_coa.csv
+====================================================================

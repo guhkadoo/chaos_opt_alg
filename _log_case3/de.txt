@@ -1,0 +1,20 @@
+====================================================================
+ RPD — 3 barras | DE (scikit-opt) + pandapower
+====================================================================
+ Controles : 4 | pop = 40 | gerações = 40
+ F / CR    : 0.5 / 0.3
+--------------------------------------------------------------------
+Caso base -> perdas = 0.723597 MW
+
+Configuração ótima:
+  slack vm_pu = 1.063819
+  gen   vm_pu = 1.068838
+  tap_pos     = -1
+  shunt step  = 1
+
+Resultados:
+  Perdas ativas : 0.631993 MW
+  Redução       : +0.091605 MW (+12.66 %)
+  Violações     : 0
+  CSV           : /home/yoshio/chaos_opt_alg/convergencia_case3_de.csv
+====================================================================

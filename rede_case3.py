@@ -96,6 +96,8 @@ def case3_orpd() -> pp.pandapowerNet:
 
     # Transformador 0–2 com comutador (±3 passos de 1,5%).
     # Relação 1:1 na posição neutra; o tap atua no lado HV (barra 0).
+    # Em pandapower ≥3, tap_changer_type="Ratio" é obrigatório para o
+    # comutador alterar a relação no fluxo de carga (senão TAP≡1 no _ppc).
     pp.create_transformer_from_parameters(
         net,
         hv_bus=b0,
@@ -113,6 +115,7 @@ def case3_orpd() -> pp.pandapowerNet:
         tap_max=3,
         tap_step_percent=1.5,
         tap_pos=0,
+        tap_changer_type="Ratio",
         name="T02",
     )
 

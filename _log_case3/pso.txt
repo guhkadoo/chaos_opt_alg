@@ -1,0 +1,25 @@
+==================================================================
+ RPD — 3 barras | PSO (scikit-opt) + pandapower
+==================================================================
+ Controles       : 4 (2 tensões, 1 tap, 1 shunt)
+ PSO             : pop = 40, max_iter = 80
+ Limite barras PV: [0.95, 1.1] pu
+ Limite barras PQ: [0.95, 1.06] pu
+------------------------------------------------------------------
+Caso base -> perdas = 0.723597 MW | penalidade = 0.000000 | objetivo = 0.723597
+
+Configuração ótima:
+  slack (barra 0)  vm_pu = 1.063514
+  gen[0] (barra 1) vm_pu = 1.069235
+  trafo[0] tap_pos = -1
+  shunt[0] step    = 1
+
+Resultados:
+  Função objetivo                      : 0.631722
+  Perdas ativas mínimas                : 0.631722 MW
+  Perdas do caso base                  : 0.723597 MW
+  Redução de perdas                    : +0.091875 MW (+12.70 %)
+  Penalidade                           : 0.000000
+  Violações de tensão                  : 0
+  CSV de convergência                  : /home/yoshio/chaos_opt_alg/convergencia_case3_pso.csv
+==================================================================
